@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Shad | A passionate Software engineer</title>
-    <meta name="description" content="A Human, a software engineer who wants to build impactful software" />
+    <title>Vertigo and Hearing Clinic in Dhanbad | Hear the world with clarity like never before</title>
+    <meta name="description" content="Solve your hearing loss and vertigo problems here" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="twitter:card" content="@ShadAmez" />
+    <meta name="twitter:card" content="@VertigoAndHear" />
 
     <style>
       body {
@@ -41,7 +41,7 @@
         margin: 10px;
         display: flex;
         flex-basis: 50%;
-        max-height: 480px;
+        max-height: 400px;
         justify-content: space-between;
       }
       .profile-image {
@@ -57,23 +57,26 @@
       }
 
       #project-paymento {
-        background: #eeedfd;
+        background: linear-gradient(90deg, rgb(106 128 138) 0%, rgb(46 53 65) 100%);
       }
 
       #project-paymento h1,
       #project-paymento p {
-        background: linear-gradient(90deg, #6734c6, #a3a4b0);
+        background: linear-gradient(90deg, #e3e3e4, #a3a9f1);
         background-clip: text;
         -webkit-background-clip: text;
         color: transparent;
       }
+      #project-paymento img {
+        margin-bottom: -4px;
+      }
 
       #project-taskaro {
-        background-color: #343d4b;
+        background: linear-gradient(90deg, rgb(222 223 223) 0%, rgb(193 216 255) 100%);
       }
       #project-taskaro h1,
       #project-taskaro p {
-        background: linear-gradient(90deg, #987bea, #fe7575);
+        background: linear-gradient(90deg, #987bea, #2f2d65);
         background-clip: text;
         -webkit-background-clip: text;
         color: transparent;
@@ -82,16 +85,32 @@
         margin: 20px;
         border-radius: 12px;
         width: 50%;
-        padding: 20px;
+        padding: 20px 20px 0px 20px;
       }
       .project-100 {
         margin: 20px;
         border-radius: 12px;
-        padding: 20px;
+        padding: 0px;
         background: radial-gradient(circle, rgba(223, 65, 112, 1) 0%, rgba(34, 30, 93, 1) 100%);
       }
+      .project-100 div:nth-child(1) > img {
+        max-width: 100%;
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+      }
+      #call-btn {
+        display: inline-flex;
+        background: #433772;
+        padding: 5px 10px;
+        border-radius: 4px;
+        transition: all 0.5s;
+      }
+      #call-btn:hover {
+        background: #2d2451;
+      }
+
       .project-100 div:nth-child(2) {
-        text-align: center;
+        padding: 20px;
       }
 
       .project-100 h1,
@@ -174,7 +193,9 @@
           margin: 10px;
         }
         .project-100 img {
-          width: 300px;
+          max-width: 100%;
+          border-top-left-radius: 12px;
+          border-top-right-radius: 12px;
         }
         #section-contact {
           margin: 10px;
@@ -191,7 +212,7 @@
       </div>
       <div class="nav-links">
         <a href="#section-home">Home</a>
-        <a href="#section-projects">Projects</a>
+        <a href="#section-services">Our Services</a>
         <a href="#section-contact">Contact</a>
       </div>
     </nav>
@@ -199,43 +220,46 @@
     <!-- About section -->
     <section id="section-home">
       <div class="about-me">
-        <h1>Hey I'm Alex, a software developer with 12 years of experience</h1>
-        <p>I care alot about crafting quality softwares that brings delightful experience to the customers</p>
+        <h1>Dhanbad's best clinic for Vertigo(Chakkar) and hearing loss</h1>
+        <p>Visit our clinic to solve your dizziness problems, buy hearing aids for all age groups, fine tune your old hearing aids.</p>
       </div>
       <div>
-        <img class="profile-image" src="img/me.jpeg" alt="My image" />
+        <img class="profile-image" src="img/hearing-doctor.jpeg" alt="My image" />
       </div>
     </section>
 
-    <!--Projects section-->
-    <section id="section-projects">
+    <!--services section-->
+    <section id="section-services">
       <div class="project-list">
         <div id="project-paymento" class="project-50">
           <div>
-            <h1>Paymento</h1>
-            <p>Payments app for professionals</p>
+            <h1>Vertigo (Chakkar)</h1>
+            <p>
+              The sensation of moving, tilting, or spinning surroundings or the feeling that you are in motion or falling despite being
+              still is known as vertigo.
+            </p>
           </div>
           <div>
-            <img src="img/screenshot-payment.png" alt="" />
+            <img src="img/dizziness.png" alt="" />
           </div>
         </div>
         <div id="project-taskaro" class="project-50">
           <div>
-            <h1>Taskaro</h1>
-            <p>Task management app</p>
+            <h1>Hearing aids</h1>
+            <p>Choose from a variety of hearing aid devices available at our clinic</p>
           </div>
           <div>
-            <img src="img/screenshot-taskaro.png" alt="" />
+            <img src="img/hearing-aid-types.png" alt="" />
           </div>
         </div>
       </div>
       <div class="project-100">
         <div>
-          <h1>Piyuu</h1>
-          <p>Freelancing platform for individuals</p>
+          <img src="img/hearing-doc.jpeg" alt="Piyuu app" />
         </div>
         <div>
-          <img src="img/screenshot-piyuu.png" alt="Piyuu app" />
+          <h1>State of the art diagnosis</h1>
+          <p>We have all kinds of latest equipments for diagnosing your vertigo and hearing loss problems.</p>
         </div>
       </div>
     </section>
@@ -243,12 +267,12 @@
     <!-- Contacts section -->
     <section id="section-contact">
       <div>
-        <h1>Want to work together</h1>
-        <p>Feel free to reach out for collaboration or a friendly hello</p>
-        <a href="mailto:hello@torqbit.com">hello@torqbit.com</a>
+        <h1>Advice that you can trust</h1>
+        <p>Don't delay in connecting with us. We are here for you.</p>
+        <a id="call-btn" href="tel:963-109-0077">Call us today</a>
       </div>
       <div>
-        <h2>Connect with me</h2>
+        <h2>Connect with us</h2>
         <a href="" class="social-links">
           <img src="img/instagram.png" alt="" height="24" />
         </a>

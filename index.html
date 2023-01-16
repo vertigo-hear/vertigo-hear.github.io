@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Shad | A passionate Software engineer</title>
+    <meta name="description" content="A Human, a software engineer who wants to build impactful software" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="twitter:card" content="@ShadAmez" />
+
+    <style>
+      body {
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+      h1 {
+        font-size: 2.5rem;
+        margin-bottom: 0.8rem;
+      }
+      p {
+        font-size: 1.5rem;
+      }
+      nav {
+        display: flex;
+        justify-content: space-between;
+        margin: 10px;
+        align-items: center;
+      }
+      .nav-links > a {
+        height: 40px;
+        padding: 4px 8px;
+        text-decoration: none;
+        color: rgb(69, 69, 69);
+        font-weight: bold;
+      }
+      .nav-links > a:hover {
+        color: black;
+      }
+      #section-home {
+        background: linear-gradient(90deg, rgba(180, 241, 254, 1) 0%, rgba(123, 130, 154, 1) 100%);
+        border-radius: 12px;
+        margin: 10px;
+        display: flex;
+        flex-basis: 50%;
+        max-height: 480px;
+        justify-content: space-between;
+      }
+      .profile-image {
+        border-top-right-radius: 12px;
+        border-bottom-right-radius: 12px;
+      }
+      .about-me {
+        padding: 20px;
+      }
+
+      .project-list {
+        display: flex;
+      }
+
+      #project-paymento {
+        background: #eeedfd;
+      }
+
+      #project-paymento h1,
+      #project-paymento p {
+        background: linear-gradient(90deg, #6734c6, #a3a4b0);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+      }
+
+      #project-taskaro {
+        background-color: #343d4b;
+      }
+      #project-taskaro h1,
+      #project-taskaro p {
+        background: linear-gradient(90deg, #987bea, #fe7575);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+      }
+      .project-50 {
+        margin: 20px;
+        border-radius: 12px;
+        width: 50%;
+        padding: 20px;
+      }
+      .project-100 {
+        margin: 20px;
+        border-radius: 12px;
+        padding: 20px;
+        background: radial-gradient(circle, rgba(223, 65, 112, 1) 0%, rgba(34, 30, 93, 1) 100%);
+      }
+      .project-100 div:nth-child(2) {
+        text-align: center;
+      }
+
+      .project-100 h1,
+      .project-100 p {
+        color: #ebe3fc;
+      }
+
+      .project-50 img {
+        max-width: 450px;
+      }
+
+      #section-contact {
+        background: linear-gradient(90deg, #8498a6 0%, #2f6fb3 100%);
+        border-radius: 12px;
+        margin: 20px;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+      }
+      #section-contact a {
+        color: #eee;
+        font-size: 1.2rem;
+        text-decoration: none;
+      }
+      #section-contact h1,
+      #section-contact h2,
+      #section-contact p {
+        color: #eee;
+        margin-top: 0.5rem;
+      }
+      .social-links {
+        padding: 5px;
+        align-items: center;
+        display: inline-flex;
+        flex-direction: row;
+        margin: 5px;
+        background-color: #1b416b;
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        justify-content: center;
+        transition: all 0.5s;
+      }
+      .social-links:hover {
+        background-color: #1d2431;
+      }
+
+      @media screen and (max-width: 420px) {
+        h1 {
+          font-size: 1.5rem;
+          margin-bottom: 0.8rem;
+        }
+        p {
+          font-size: 1.2rem;
+        }
+        body {
+          max-width: 400px;
+        }
+        #section-home {
+          flex-direction: column;
+          margin-bottom: 20px;
+        }
+        .profile-image {
+          width: 100%;
+          border-bottom-left-radius: 15px;
+          border-top-right-radius: 0px;
+        }
+        .project-50 {
+          width: 80vw;
+        }
+        .project-50 img {
+          max-width: 300px;
+        }
+        .project-list {
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+        .project-100 {
+          margin: 10px;
+        }
+        .project-100 img {
+          width: 300px;
+        }
+        #section-contact {
+          margin: 10px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Navigation for the website-->
+    <nav>
+      <div>
+        <a href="/"><img src="img/logo.png" alt="my logo" height="40" width="auto" /></a>
+      </div>
+      <div class="nav-links">
+        <a href="#section-home">Home</a>
+        <a href="#section-projects">Projects</a>
+        <a href="#section-contact">Contact</a>
+      </div>
+    </nav>
+
+    <!-- About section -->
+    <section id="section-home">
+      <div class="about-me">
+        <h1>Hey I'm Alex, a software developer with 12 years of experience</h1>
+        <p>I care alot about crafting quality softwares that brings delightful experience to the customers</p>
+      </div>
+      <div>
+        <img class="profile-image" src="img/me.jpeg" alt="My image" />
+      </div>
+    </section>
+
+    <!--Projects section-->
+    <section id="section-projects">
+      <div class="project-list">
+        <div id="project-paymento" class="project-50">
+          <div>
+            <h1>Paymento</h1>
+            <p>Payments app for professionals</p>
+          </div>
+          <div>
+            <img src="img/screenshot-payment.png" alt="" />
+          </div>
+        </div>
+        <div id="project-taskaro" class="project-50">
+          <div>
+            <h1>Taskaro</h1>
+            <p>Task management app</p>
+          </div>
+          <div>
+            <img src="img/screenshot-taskaro.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="project-100">
+        <div>
+          <h1>Piyuu</h1>
+          <p>Freelancing platform for individuals</p>
+        </div>
+        <div>
+          <img src="img/screenshot-piyuu.png" alt="Piyuu app" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Contacts section -->
+    <section id="section-contact">
+      <div>
+        <h1>Want to work together</h1>
+        <p>Feel free to reach out for collaboration or a friendly hello</p>
+        <a href="mailto:hello@torqbit.com">hello@torqbit.com</a>
+      </div>
+      <div>
+        <h2>Connect with me</h2>
+        <a href="" class="social-links">
+          <img src="img/instagram.png" alt="" height="24" />
+        </a>
+        <a href="" class="social-links">
+          <img src="img/linkedin.png" alt="" height="24" />
+        </a>
+      </div>
+    </section>
+  </body>
+</html>
